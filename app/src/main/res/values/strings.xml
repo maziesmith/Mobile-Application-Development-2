@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">NUMAD16S-RachitPuri</string>
+    <string name="title_name">Rachit Puri</string>
+    <string name="tictactoe">TicTacToe</string>
+    <string name="about">About</string>
+    <string name="name">Rachit Puri</string>
+    <string name="picDescription">myImage</string>
+    <string name="email">rachitpuri19@gmail.com</string>
+    <string name="year">2nd year MS</string>
+    <string name="major">Computer Science</string>
+    <string name="error">Generate Error</string>
+    <string name="hint_word">Enter a word ...</string>
+    <string name="homebutton">Return to menu</string>
+    <string name="clear_button">Clear</string>
+    <string name="acknowledgement">Acknowledgement</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="wordgame">Word Game</string>
+    <string name="startnewgame">New Game</string>
+    <string name="continuegame">Resume Game</string>
+    <string name="instructions">Instructions</string>
+    <string name="dictionary_actionbar_title">Test Dictionary</string>
+    <string name="max_game_time">1:30</string>
+    <string name="min_game_time">0:00</string>
+    <string name="quit">Quit</string>
+    <string name="deviceId">0000000000000000</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="unregister">UnRegister</string>
+    <string name="send_label">Send</string>
+    <string name="clear_label">Clear</string>
+    <string name="gcm">GCM</string>
+    <string name="communication">Communication</string>
+    <string name="twoplayerwordgame">Two Player Word Game</string>
+    <string name="uniqueUsername">Username already taken. Please enter another</string>
+    <string name="emptyUsername">Username can\'t be empty</string>
+
+    <!-- Two player game -->
+    <string name="leaderboard">LeaderBoard</string>
+    <string name="random">Random Match</string>
+    <string name="friend">Find a Friend</string>
+    <string name="requestPlayer">Request To Join</string>
+    <string name="nosuchfriend">Friend not found. Search again</string>
+    <string name="requestpending">Waiting for approval. Hold Tight !</string>
+    <string name="incomingrequest">has sent you a request</string>
+    <string name="requestaccepted">has accepted your Request. Go ahead and press play</string>
+    <string name="requestrejected">has rejected your Request. Find some other opponent</string>
+
+    <string name="yourmove">Your move</string>
+    <string name="opponentmove">waiting for other player\'s move</string>
+    <string name="startscore"> :0</string>
+
+</resources>

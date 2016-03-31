@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/registrationPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/communication_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:text="Registration Page"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="end|center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="6dp"
+                    android:text="Username - "/>
+
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="enter your name ..."
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColorHint="#238745"
+                    android:textSize="16sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/unique_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/red_color"
+            android:text="@string/uniqueUsername"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/communication_registor_button"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="onClick"
+            android:text="@string/register" />
+
+        <Button
+            android:id="@+id/communication_instruction"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="@string/instructions"/>
+
+        <Button
+            android:id="@+id/communication_ack"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="@string/acknowledgement"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/communicationPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/receiver_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Whom to send a message ?"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColorHint="#238745"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/communication_edit_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="input message here ..."
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColorHint="#238745"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/communication_send"
+            android:layout_marginTop="30dp"
+            android:onClick="onClick"
+            android:text="@string/send_label" />
+
+        <Button
+            android:id="@+id/communication_unregistor_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClick"
+            android:text="@string/unregister" />
+
+    </LinearLayout>
+
+</LinearLayout>

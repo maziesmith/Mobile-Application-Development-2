@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/outer_tile"
+    android:elevation="@dimen/elevation_low"
+    android:padding="@dimen/small_board_padding"
+    tools:context="edu.neu.madcourse.wordgame.WordGameActivity">
+
+    <Button android:id="@+id/small11" style="@style/TileButtonWord"
+        android:layout_column="0" android:layout_row="0"/>
+    <Button android:id="@+id/small22" style="@style/TileButtonWord"
+        android:layout_column="1" android:layout_row="0"/>
+    <Button android:id="@+id/small33" style="@style/TileButtonWord"
+        android:layout_column="2" android:layout_row="0"/>
+    <Button android:id="@+id/small44" style="@style/TileButtonWord"
+        android:layout_column="0" android:layout_row="1"/>
+    <Button android:id="@+id/small55" style="@style/TileButtonWord"
+        android:layout_column="1" android:layout_row="1"/>
+    <Button android:id="@+id/small66" style="@style/TileButtonWord"
+        android:layout_column="2" android:layout_row="1"/>
+    <Button android:id="@+id/small77" style="@style/TileButtonWord"
+        android:layout_column="0" android:layout_row="2"/>
+    <Button android:id="@+id/small88" style="@style/TileButtonWord"
+        android:layout_column="1" android:layout_row="2"/>
+    <Button android:id="@+id/small99" style="@style/TileButtonWord"
+        android:layout_column="2" android:layout_row="2"/>
+</GridLayout>

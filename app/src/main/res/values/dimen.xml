@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tile_size_1">28dp</dimen>
+    <dimen name="tile_margin_1">3dp</dimen>
+    <dimen name="tile_padding_1">3dp</dimen>
+</resources>

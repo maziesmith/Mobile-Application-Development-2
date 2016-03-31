@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="edu.neu.madcourse.wordgame.WordGameActivity">
+
+    <include android:id="@+id/large11" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="0" android:layout_row="0"/>
+    <include android:id="@+id/large22" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="1" android:layout_row="0"/>
+    <include android:id="@+id/large33" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="2" android:layout_row="0"/>
+    <include android:id="@+id/large44" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="0" android:layout_row="1"/>
+    <include android:id="@+id/large55" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="1" android:layout_row="1"/>
+    <include android:id="@+id/large66" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="2" android:layout_row="1"/>
+    <include android:id="@+id/large77" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="0" android:layout_row="2"/>
+    <include android:id="@+id/large88" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="1" android:layout_row="2"/>
+    <include android:id="@+id/large99" layout="@layout/small_board_grid"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_board_margin"
+        android:layout_column="2" android:layout_row="2"/>
+</GridLayout>

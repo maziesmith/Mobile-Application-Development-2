@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neu.madcourse.rachit">
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="edu.neu.madcourse.rachit.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="edu.neu.madcourse.rachit.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.neu.madcourse.dictionary.WordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.neu.madcourse.wordgame.WordGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.neu.madcourse.wordgame.GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.neu.madcourse.communication.CommunicationMain"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="edu.neu.madcourse.communication.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="edu.neu.madcourse.gcmdemo" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="edu.neu.madcourse.twoplayer.GameBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="edu.neu.madcourse.gcmdemo" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="edu.neu.madcourse.communication.GcmIntentService" />
+        <service android:name="edu.neu.madcourse.twoplayer.GameIntentService" />
+
+        <activity
+            android:name="edu.neu.madcourse.twoplayer.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="edu.neu.madcourse.twoplayer.MatchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="edu.neu.madcourse.twoplayer.FindPlayerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.twoplayer.TwoPlayerGameMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="edu.neu.madcourse.twoplayer.TwoPlayerLeaderBoardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

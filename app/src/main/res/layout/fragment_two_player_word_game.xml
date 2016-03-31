@@ -1,0 +1,194 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.neu.madcourse.wordgame.WordGameActivity">
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/wordgame_progressbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Loading Dictionary..."/>
+
+        <ProgressBar
+            android:id="@+id/wordgame_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/two_player_top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:baselineAligned="false"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/timerlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:weightSum="6">
+
+            <ToggleButton
+                android:id="@+id/two_player_pause_game"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:textOff=""
+                android:textOn=""
+                android:checked="false"
+                android:layout_weight="0.5"
+                android:background="@drawable/pause_toggle"/>
+
+            <ToggleButton
+                android:id="@+id/two_player_gamemusic"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:checked="true"
+                android:layout_weight="0.5"
+                android:background="@drawable/music_toggle"/>
+
+            <TextView
+                android:id="@+id/two_player_game_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="2"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:text="@string/max_game_time"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:id="@+id/player1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/player1_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/player2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/player2_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/two_player_mid_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two_player_top_section"
+        android:layout_above="@+id/wordgame_grid"
+        android:layout_marginTop="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/words_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <TextView
+            android:id="@+id/player_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wordsfound"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/typed_letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:padding="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border"/>
+
+        <!--<Button
+            android:id="@+id/two_player_clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:text="Clear"/>-->
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/wordgame_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/wordgame_root"
+            android:layout_gravity="bottom|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/large_board_grid"/>
+    </FrameLayout>
+
+</RelativeLayout>
