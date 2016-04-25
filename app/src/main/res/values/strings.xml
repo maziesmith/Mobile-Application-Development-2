@@ -17,6 +17,7 @@
     <string name="wordgame">Word Game</string>
     <string name="startnewgame">New Game</string>
     <string name="continuegame">Resume Game</string>
+    <string name="finalProject">Final Project</string>
     <string name="instructions">Instructions</string>
     <string name="dictionary_actionbar_title">Test Dictionary</string>
     <string name="max_game_time">1:30</string>

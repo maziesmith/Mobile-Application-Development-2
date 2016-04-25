@@ -1,1 +1,1 @@
-include ':app', ':ticTacToev6'
+include ':app', ':ticTacToev6', ':finalProject'

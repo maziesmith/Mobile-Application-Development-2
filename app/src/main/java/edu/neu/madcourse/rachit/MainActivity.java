@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button wordgame;
     private Button communication;
     private Button twoplayer;
+    private Button finalProject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         wordgame = (Button) findViewById(R.id.wordgame);
         communication = (Button) findViewById(R.id.communication);
         twoplayer = (Button) findViewById(R.id.twoplayer);
+        finalProject = (Button) findViewById(R.id.finalProject);
 
         about.setOnClickListener(this);
         tictactoe.setOnClickListener(this);
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         error.setOnClickListener(this);
         communication.setOnClickListener(this);
         twoplayer.setOnClickListener(this);
+        finalProject.setOnClickListener(this);
     }
 
     @Override
@@ -82,6 +85,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.twoplayer:
                 intent = new Intent(MainActivity.this, edu.neu.madcourse.twoplayer.MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.finalProject:
+                intent = new Intent(MainActivity.this, edu.neu.madcourse.adibalwani.finalproject.MainActivity.class);
                 startActivity(intent);
                 break;
             default:
